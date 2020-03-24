@@ -15,5 +15,7 @@ namespace DiscordBot
         [JsonProperty("prefix")]
         public string Prefix { get; private set; }
 
+        [JsonProperty("key")]
+        public string Key { get; private set; }
     }
 }

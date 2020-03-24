@@ -10,6 +10,8 @@ using DSharpPlus.EventArgs;
 using Newtonsoft.Json;
 using DiscordBot.commands;
 using DSharpPlus.Interactivity;
+ 
+
 
 namespace DiscordBot
 {
@@ -19,6 +21,7 @@ namespace DiscordBot
 
         public CommandsNextModule Commands { get; private set; }
 
+        public string X_Rapid_Key; 
      
         public async Task MainAsync(string[] args)
         {
@@ -30,27 +33,32 @@ namespace DiscordBot
 
             var configJson = JsonConvert.DeserializeObject<ConfigJson>(json);
 
+            X_Rapid_Key = configJson.Key;
+
             Client = new DiscordClient(new DiscordConfiguration
             {
                 Token = configJson.Token,
                 TokenType = TokenType.Bot,
                 AutoReconnect = true,
                 UseInternalLogHandler = true,
-                LogLevel = LogLevel.Debug
+                LogLevel = LogLevel.Debug,
+                
             });
 
-            
 
             var commandsConfig = new CommandsNextConfiguration
             {
                 StringPrefix = configJson.Prefix,
                 EnableMentionPrefix = true,
                 EnableDms = false,
+                CaseSensitive = false,
+                IgnoreExtraArguments = true,
+                
                 
 
             };
 
-            Commands = Client.UseCommandsNext(commandsConfig);
+            Commands = Client.UseCommandsNext(commandsConfig);            
 
             Commands.RegisterCommands<Music>();
             Commands.RegisterCommands<RandomStuff>();
