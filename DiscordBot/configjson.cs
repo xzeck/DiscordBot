@@ -17,5 +17,11 @@ namespace DiscordBot
 
         [JsonProperty("key")]
         public string Key { get; private set; }
+
+        [JsonProperty("DBRUL")]
+        public string DBURL { get; private set; }
+
+        [JsonProperty("Secret")]
+        public string Secret { get; private set; }
     }
 }

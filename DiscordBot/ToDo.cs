@@ -8,12 +8,12 @@ using Newtonsoft.Json;
 
 namespace DiscordBot
 {
-    struct ToDo
+    internal class ToDo
     {
         [JsonProperty("User")]
-        public string User { get; private set; }
+        public string User { get; set; }
 
         [JsonProperty("Todo")]
-        public List<string> Todo { get; private set; }
+        public List<string> Todo { get; set; }
     }
 }

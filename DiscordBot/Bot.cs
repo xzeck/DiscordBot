@@ -20,20 +20,18 @@ namespace DiscordBot
         public DiscordClient Client { get; private set; }
 
         public CommandsNextModule Commands { get; private set; }
-
-        public string X_Rapid_Key; 
      
         public async Task MainAsync(string[] args)
         {
-            var json = string.Empty;
+            /*var json = string.Empty;
 
             using (var fs = File.OpenRead("config.json"))
             using (var sr = new StreamReader(fs, new UTF8Encoding(false)))
-                json = await sr.ReadToEndAsync().ConfigureAwait(false);
+                json = await sr.ReadToEndAsync().ConfigureAwait(false);*/
 
-            var configJson = JsonConvert.DeserializeObject<ConfigJson>(json);
 
-            X_Rapid_Key = configJson.Key;
+            var configJson = ReadConfig.config;
+
 
             Client = new DiscordClient(new DiscordConfiguration
             {
@@ -53,15 +51,16 @@ namespace DiscordBot
                 EnableDms = false,
                 CaseSensitive = false,
                 IgnoreExtraArguments = true,
-                
-                
-
             };
 
             Commands = Client.UseCommandsNext(commandsConfig);            
 
             Commands.RegisterCommands<Music>();
             Commands.RegisterCommands<RandomStuff>();
+            Commands.RegisterCommands<Anime>();
+            Commands.RegisterCommands<PollClass>();
+            Commands.RegisterCommands<SuggestMovie>();
+            Commands.RegisterCommands<ToDoClass>();
 
             await Client.ConnectAsync();
 

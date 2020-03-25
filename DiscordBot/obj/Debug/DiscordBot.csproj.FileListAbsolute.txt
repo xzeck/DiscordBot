@@ -48,3 +48,15 @@ F:\Code\DiscordBot\DiscordBot\bin\Debug\Microsoft.Extensions.Logging.xml
 F:\Code\DiscordBot\DiscordBot\bin\Debug\Microsoft.Extensions.Primitives.xml
 F:\Code\DiscordBot\DiscordBot\bin\Debug\RestSharp.xml
 F:\Code\DiscordBot\DiscordBot\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+F:\Code\DiscordBot\DiscordBot\bin\Debug\TMDbLib.dll
+F:\Code\DiscordBot\DiscordBot\bin\Debug\FireSharp.dll
+F:\Code\DiscordBot\DiscordBot\bin\Debug\Microsoft.Threading.Tasks.dll
+F:\Code\DiscordBot\DiscordBot\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.dll
+F:\Code\DiscordBot\DiscordBot\bin\Debug\Microsoft.Threading.Tasks.Extensions.dll
+F:\Code\DiscordBot\DiscordBot\bin\Debug\System.Net.Http.Extensions.dll
+F:\Code\DiscordBot\DiscordBot\bin\Debug\System.Net.Http.Primitives.dll
+F:\Code\DiscordBot\DiscordBot\bin\Debug\Microsoft.Threading.Tasks.xml
+F:\Code\DiscordBot\DiscordBot\bin\Debug\Microsoft.Threading.Tasks.Extensions.xml
+F:\Code\DiscordBot\DiscordBot\bin\Debug\Microsoft.Threading.Tasks.Extensions.Desktop.xml
+F:\Code\DiscordBot\DiscordBot\bin\Debug\System.Net.Http.Extensions.xml
+F:\Code\DiscordBot\DiscordBot\bin\Debug\System.Net.Http.Primitives.xml

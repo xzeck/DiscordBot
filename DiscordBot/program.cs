@@ -11,7 +11,7 @@ namespace DiscordBot
         static void Main(string[] args)
         {
             var bot = new Bot();
-
+            ReadConfig.Read();
             bot.MainAsync(args).GetAwaiter().GetResult();
         }
     }

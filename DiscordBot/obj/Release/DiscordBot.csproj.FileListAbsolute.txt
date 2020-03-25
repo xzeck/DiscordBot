@@ -48,3 +48,4 @@ F:\Code\DiscordBot\DiscordBot\bin\Release\Microsoft.Extensions.Logging.xml
 F:\Code\DiscordBot\DiscordBot\bin\Release\Microsoft.Extensions.Primitives.xml
 F:\Code\DiscordBot\DiscordBot\bin\Release\RestSharp.xml
 F:\Code\DiscordBot\DiscordBot\bin\Release\System.Runtime.CompilerServices.Unsafe.xml
+F:\Code\DiscordBot\DiscordBot\bin\Release\TMDbLib.dll
